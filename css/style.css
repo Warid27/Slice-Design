@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+html, body{
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+    font-family: "Open Sans";
+}
+body{
+    background-color: #F9F9F9;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background-color: #F0F3FF;
+}
+header img{
+    height: 2em;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav ul li{
+    padding: .3em .5em;
+    display: flex;
+    align-items: center;
+}
+nav ul li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all .3s ease;
+}
+nav ul li a:hover{
+    color: #3B11E5;
+}
+    /* ACTIVE */
+    /* .nav-item-1 a{
+        color: #3B11E5;
+    }
+    .nav-item-2 a:hover{
+        color: #3B11E5;
+    }
+    .nav-item-3 a:hover{
+        color: #3B11E5;
+    }
+    .nav-item-4 a:hover{
+        color: #3B11E5;
+    }
+    .nav-item-5 a:hover{
+        color: #3B11E5;
+    } */
+
+.arrow-bottom img{
+    width: 16px;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+/* CONTAINER 1 */
+
+.container-1{
+    display: flex;
+    flex-direction: column;
+    background-color: #F0F3FF;
+    padding: 3em;
+}
+
+.mulai-belajar-section{
+    display: flex;
+    flex-direction: row;
+    padding: 3em 0 3em 0;
+    padding-left: 5em;
+    padding-right: 5em;
+    justify-content: space-around;
+}
+.gambar-container-1 img{
+    height: 25em;
+}
+.mulai-belajar{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    gap: 2em;
+}
+.judul-container-1{
+    font-weight: bold;
+    font-size: calc(1.345rem + 1.14vw);
+    width: 8em;
+}
+.deskripsi-container-1{
+    color: #959699;
+}
+.mulai-belajar-arrow a{
+    display: flex;
+    width: 10em;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 4px;
+    align-items: center;
+    background-color: #3A10E5;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all .3s ease-in-out;
+}
+.mulai-belajar-arrow a:hover{
+    width: 12em;
+    padding: 20px 15px 20px 15px;
+}
+.mulai-belajar-arrow a:active{
+    transform: translateY(-10px);
+}
+    /* footer container */
+.footer-container-1{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #FACB3B;
+    padding: 2em 0 2em 0;
+}
+.footer-item-container-1{
+    display: flex;
+    align-items: center;
+}
+.gambar-footer-container-1 img{
+    height: 40px;
+}
+.subjudul-footer-container-1 div{
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.deskripsi-footer-container-1 div{
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+/* CONTAINER 2 */
+.container-2{
+    margin: 3em;
+    display: flex;
+    flex-direction: column;
+}
+.header-container-2{
+    display: flex;
+    padding: 3em;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation-container-2{
+    display: flex;
+    gap: 1em;
+}
+.navigation-container-2 a{
+    text-decoration: none;
+    color: black;
+}
+.subjudul-container-2{
+    display: flex;
+    gap: 5px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.subjudul-container-2 span{
+    display: flex;
+    box-sizing: border-box;
+    box-shadow: #FDD5A1 0px -10px 20px -10px inset;
+}
+.nav-item-container-2 a{
+    padding: 20px;
+    border-radius: 4px;
+    transition: all .3s ease;
+}
+.nav-item-container-2 a:hover{
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+    /* COURSE */
+.course-container-2{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.course-item{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #E3E6EF;
+    border-radius: 4px;
+    margin: 1em;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.course-item:hover{
+    transform: translateY(-10px);
+}
+.gambar-course-item a{
+    position: relative;
+}
+.gambar-course-item a img:nth-child(1){
+    width: 100%;
+}
+.gambar-course-item a img:nth-child(2){
+    position: absolute;
+    top: -15em;
+    left: 1em;
+}
+
+.deskripsi-course-item{
+    padding: 1em 1em 2em 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.creator{
+    color: #3A10E5;
+    font-weight: bold;
+}
+.judul-course{
+    display: flex;
+    width: 12em;
+    font-size: 30px;
+    font-weight: bold;
+}
+.img-deskripsi-course{
+    font-size: 20px;
+}
+
+/* MEMBERSHIP */
+.membership-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    background-color: #FFF0E5;
+    padding: 3em;
+}
+.membership-section img{
+    width: 15em;
+}
+.membership-section div:nth-child(2){
+    display: flex;
+    width: 15em;
+    font-size: 50px;
+    font-weight: bold;
+}
+.membership-section div a{
+    display: flex;
+    font-size: 24px;
+    background-color: #3B11E5;
+    padding: 1em 1em 1em 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    transition: all .3s ease;
+}
+.membership-section div a:hover{
+    padding: 1em 3em 1em 1em;
+}
+
+/* KATEGORI */
+.kategori{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 3em;
+}
+.kategori-populer{
+    display: flex;
+    gap: 5px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.kategori-populer span{
+    display: flex;
+    box-sizing: border-box;
+    box-shadow: #FDD5A1 0px -10px 20px -10px inset;
+}
+.kategori-item{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content:center ;
+}
+.k-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    width: 15em;
+    padding: 1em 8em 1em 2em;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.k-item:hover{
+transform: translateY(-10px);
+}
+.g-k-item{
+    border-radius: 100%;
+    padding: 2em;
+    background-color: #F7F9FF;
+}
+.judul-k-item{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* EXPLORE */
+.explore{
+    margin: auto;
+    padding: 3em;
+    text-align: center;
+}
+.explore a{
+    text-decoration: none;
+    color: #3A10E5;
+    font-size: 30px;
+    font-weight: bold;
+    transition: all .3s ease;
+}
+.explore a:hover{
+    font-size: 50px;
+}
+
+/* Tingkatkan */
+.container-tingkatkan{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #F0F3FF;
+    margin: 5em;
+    align-items: center;
+    padding: 3em;
+    border-radius: 4px;
+}
+.deskripsi-tingkatkan{
+    width: 35%;
+}
+.deskripsi-tingkatkan h1{
+    font-size: 60px;
+}
+.deskripsi-tingkatkan div a{
+    display: flex;
+    width: max-content;
+    font-size: 24px;
+    background-color: #3B11E5;
+    padding: 1em 1em 1em 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    transition: all .3s ease;
+}
+.deskripsi-tingkatkan div a:hover{
+    padding: 1em 3em 1em 1em;
+}
+
+
+/* PEMBERITAHUAN */
+.pemberitahuan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+}
+.event-handler{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3em;
+    flex-wrap: wrap;
+    padding: 3em;
+}
+.event{
+    display: flex;
+    flex-direction: column;
+    width: 30em;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+.event:hover{
+    width: 35em;
+    transform: scaleY(1em);
+}
+.event img{
+    border-radius: 5px;
+}
+.event-date{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3em;
+}
+.day{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.day p{
+    padding: 0 2em 0 0;
+    border-right: 1px solid #919191;
+}
+.day p b{
+    font-size: 30px;
+    color: #360BE4;
+}
+.isi-event{
+    display: flex;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #090E23;
+    padding: 3em;
+}
+.footer-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer-ligaSMK{
+    display: flex;
+    flex-direction: column;
+}
+.footer-ligaSMK img{
+    width: 200px;
+}
+.footer-ligaSMK div img{
+    width: 25px;
+}
+.footer-ligaSMK p{
+    color: white;
+}
